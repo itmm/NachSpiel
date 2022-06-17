@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24FD6A75285C8F0800F1F680 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A74285C8F0800F1F680 /* Tests_iOS.swift */; };
+		24FD6A77285C8F0800F1F680 /* Tests_iOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A76285C8F0800F1F680 /* Tests_iOSLaunchTests.swift */; };
+		24FD6A81285C8F0800F1F680 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A80285C8F0800F1F680 /* Tests_macOS.swift */; };
+		24FD6A83285C8F0800F1F680 /* Tests_macOSLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A82285C8F0800F1F680 /* Tests_macOSLaunchTests.swift */; };
+		24FD6A84285C8F0800F1F680 /* NachSpielApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A5C285C8F0600F1F680 /* NachSpielApp.swift */; };
+		24FD6A85285C8F0800F1F680 /* NachSpielApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A5C285C8F0600F1F680 /* NachSpielApp.swift */; };
+		24FD6A86285C8F0800F1F680 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A5D285C8F0600F1F680 /* ContentView.swift */; };
+		24FD6A87285C8F0800F1F680 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A5D285C8F0600F1F680 /* ContentView.swift */; };
+		24FD6A88285C8F0800F1F680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FD6A5E285C8F0800F1F680 /* Assets.xcassets */; };
+		24FD6A89285C8F0800F1F680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FD6A5E285C8F0800F1F680 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24FD6A71285C8F0800F1F680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24FD6A57285C8F0600F1F680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24FD6A62285C8F0800F1F680;
+			remoteInfo = "NachSpiel (iOS)";
+		};
+		24FD6A7D285C8F0800F1F680 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24FD6A57285C8F0600F1F680 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24FD6A68285C8F0800F1F680;
+			remoteInfo = "NachSpiel (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24FD6A5C285C8F0600F1F680 /* NachSpielApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NachSpielApp.swift; sourceTree = "<group>"; };
+		24FD6A5D285C8F0600F1F680 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		24FD6A5E285C8F0800F1F680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24FD6A63285C8F0800F1F680 /* NachSpiel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NachSpiel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FD6A69285C8F0800F1F680 /* NachSpiel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NachSpiel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FD6A6B285C8F0800F1F680 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		24FD6A70285C8F0800F1F680 /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FD6A74285C8F0800F1F680 /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		24FD6A76285C8F0800F1F680 /* Tests_iOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOSLaunchTests.swift; sourceTree = "<group>"; };
+		24FD6A7C285C8F0800F1F680 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FD6A80285C8F0800F1F680 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		24FD6A82285C8F0800F1F680 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24FD6A60285C8F0800F1F680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A66285C8F0800F1F680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A6D285C8F0800F1F680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A79285C8F0800F1F680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24FD6A56285C8F0600F1F680 = {
+			isa = PBXGroup;
+			children = (
+				24FD6A5B285C8F0600F1F680 /* Shared */,
+				24FD6A6A285C8F0800F1F680 /* macOS */,
+				24FD6A73285C8F0800F1F680 /* Tests iOS */,
+				24FD6A7F285C8F0800F1F680 /* Tests macOS */,
+				24FD6A64285C8F0800F1F680 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24FD6A5B285C8F0600F1F680 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				24FD6A5C285C8F0600F1F680 /* NachSpielApp.swift */,
+				24FD6A5D285C8F0600F1F680 /* ContentView.swift */,
+				24FD6A5E285C8F0800F1F680 /* Assets.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		24FD6A64285C8F0800F1F680 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24FD6A63285C8F0800F1F680 /* NachSpiel.app */,
+				24FD6A69285C8F0800F1F680 /* NachSpiel.app */,
+				24FD6A70285C8F0800F1F680 /* Tests iOS.xctest */,
+				24FD6A7C285C8F0800F1F680 /* Tests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24FD6A6A285C8F0800F1F680 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				24FD6A6B285C8F0800F1F680 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		24FD6A73285C8F0800F1F680 /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				24FD6A74285C8F0800F1F680 /* Tests_iOS.swift */,
+				24FD6A76285C8F0800F1F680 /* Tests_iOSLaunchTests.swift */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		24FD6A7F285C8F0800F1F680 /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				24FD6A80285C8F0800F1F680 /* Tests_macOS.swift */,
+				24FD6A82285C8F0800F1F680 /* Tests_macOSLaunchTests.swift */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24FD6A62285C8F0800F1F680 /* NachSpiel (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FD6A8C285C8F0800F1F680 /* Build configuration list for PBXNativeTarget "NachSpiel (iOS)" */;
+			buildPhases = (
+				24FD6A5F285C8F0800F1F680 /* Sources */,
+				24FD6A60285C8F0800F1F680 /* Frameworks */,
+				24FD6A61285C8F0800F1F680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NachSpiel (iOS)";
+			productName = "NachSpiel (iOS)";
+			productReference = 24FD6A63285C8F0800F1F680 /* NachSpiel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24FD6A68285C8F0800F1F680 /* NachSpiel (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FD6A8F285C8F0800F1F680 /* Build configuration list for PBXNativeTarget "NachSpiel (macOS)" */;
+			buildPhases = (
+				24FD6A65285C8F0800F1F680 /* Sources */,
+				24FD6A66285C8F0800F1F680 /* Frameworks */,
+				24FD6A67285C8F0800F1F680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NachSpiel (macOS)";
+			productName = "NachSpiel (macOS)";
+			productReference = 24FD6A69285C8F0800F1F680 /* NachSpiel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24FD6A6F285C8F0800F1F680 /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FD6A92285C8F0800F1F680 /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				24FD6A6C285C8F0800F1F680 /* Sources */,
+				24FD6A6D285C8F0800F1F680 /* Frameworks */,
+				24FD6A6E285C8F0800F1F680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24FD6A72285C8F0800F1F680 /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = 24FD6A70285C8F0800F1F680 /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		24FD6A7B285C8F0800F1F680 /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FD6A95285C8F0800F1F680 /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				24FD6A78285C8F0800F1F680 /* Sources */,
+				24FD6A79285C8F0800F1F680 /* Frameworks */,
+				24FD6A7A285C8F0800F1F680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24FD6A7E285C8F0800F1F680 /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = 24FD6A7C285C8F0800F1F680 /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24FD6A57285C8F0600F1F680 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					24FD6A62285C8F0800F1F680 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					24FD6A68285C8F0800F1F680 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					24FD6A6F285C8F0800F1F680 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 24FD6A62285C8F0800F1F680;
+					};
+					24FD6A7B285C8F0800F1F680 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 24FD6A68285C8F0800F1F680;
+					};
+				};
+			};
+			buildConfigurationList = 24FD6A5A285C8F0600F1F680 /* Build configuration list for PBXProject "NachSpiel" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24FD6A56285C8F0600F1F680;
+			productRefGroup = 24FD6A64285C8F0800F1F680 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24FD6A62285C8F0800F1F680 /* NachSpiel (iOS) */,
+				24FD6A68285C8F0800F1F680 /* NachSpiel (macOS) */,
+				24FD6A6F285C8F0800F1F680 /* Tests iOS */,
+				24FD6A7B285C8F0800F1F680 /* Tests macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24FD6A61285C8F0800F1F680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FD6A88285C8F0800F1F680 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A67285C8F0800F1F680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FD6A89285C8F0800F1F680 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A6E285C8F0800F1F680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A7A285C8F0800F1F680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24FD6A5F285C8F0800F1F680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FD6A86285C8F0800F1F680 /* ContentView.swift in Sources */,
+				24FD6A84285C8F0800F1F680 /* NachSpielApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A65285C8F0800F1F680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FD6A87285C8F0800F1F680 /* ContentView.swift in Sources */,
+				24FD6A85285C8F0800F1F680 /* NachSpielApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A6C285C8F0800F1F680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FD6A77285C8F0800F1F680 /* Tests_iOSLaunchTests.swift in Sources */,
+				24FD6A75285C8F0800F1F680 /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FD6A78285C8F0800F1F680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FD6A83285C8F0800F1F680 /* Tests_macOSLaunchTests.swift in Sources */,
+				24FD6A81285C8F0800F1F680 /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24FD6A72285C8F0800F1F680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24FD6A62285C8F0800F1F680 /* NachSpiel (iOS) */;
+			targetProxy = 24FD6A71285C8F0800F1F680 /* PBXContainerItemProxy */;
+		};
+		24FD6A7E285C8F0800F1F680 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24FD6A68285C8F0800F1F680 /* NachSpiel (macOS) */;
+			targetProxy = 24FD6A7D285C8F0800F1F680 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		24FD6A8A285C8F0800F1F680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24FD6A8B285C8F0800F1F680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		24FD6A8D285C8F0800F1F680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.knp.NachSpiel;
+				PRODUCT_NAME = NachSpiel;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24FD6A8E285C8F0800F1F680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.knp.NachSpiel;
+				PRODUCT_NAME = NachSpiel;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24FD6A90285C8F0800F1F680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.knp.NachSpiel;
+				PRODUCT_NAME = NachSpiel;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		24FD6A91285C8F0800F1F680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.knp.NachSpiel;
+				PRODUCT_NAME = NachSpiel;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		24FD6A93285C8F0800F1F680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.knp.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NachSpiel (iOS)";
+			};
+			name = Debug;
+		};
+		24FD6A94285C8F0800F1F680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.knp.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "NachSpiel (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24FD6A96285C8F0800F1F680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.knp.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "NachSpiel (macOS)";
+			};
+			name = Debug;
+		};
+		24FD6A97285C8F0800F1F680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "de.knp.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "NachSpiel (macOS)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24FD6A5A285C8F0600F1F680 /* Build configuration list for PBXProject "NachSpiel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FD6A8A285C8F0800F1F680 /* Debug */,
+				24FD6A8B285C8F0800F1F680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FD6A8C285C8F0800F1F680 /* Build configuration list for PBXNativeTarget "NachSpiel (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FD6A8D285C8F0800F1F680 /* Debug */,
+				24FD6A8E285C8F0800F1F680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FD6A8F285C8F0800F1F680 /* Build configuration list for PBXNativeTarget "NachSpiel (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FD6A90285C8F0800F1F680 /* Debug */,
+				24FD6A91285C8F0800F1F680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FD6A92285C8F0800F1F680 /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FD6A93285C8F0800F1F680 /* Debug */,
+				24FD6A94285C8F0800F1F680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FD6A95285C8F0800F1F680 /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FD6A96285C8F0800F1F680 /* Debug */,
+				24FD6A97285C8F0800F1F680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24FD6A57285C8F0600F1F680 /* Project object */;
+}
