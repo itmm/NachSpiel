@@ -2,18 +2,20 @@ import SwiftUI
 
 struct ContentView: View {
 	@State private var scale: Scale = trainingScales[0]
+
+	private var player = Player()
 	
 	func play(interval: Int) {
-		
+		player.play([scale.midiNoteInScale(index: interval)])
 	}
 	
 	func newGame() {
-		let idx = (0..<trainingScales.count).randomElement()
+		let idx = (0 ..< trainingScales.count).randomElement()
 		scale = trainingScales[idx!]
 	}
 
 	var body: some View {
-		NavigationView{
+		NavigationView {
 			Form {
 				Section {
 					Text("Key: \(scale.name)")

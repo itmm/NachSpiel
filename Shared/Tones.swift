@@ -28,7 +28,7 @@ func noteName(midiCode: Int, preferSharp: Bool) -> String {
 	case 9: return "A"
 	case 10: return preferSharp ? "A#" : "Bb"
 	case 11: return "B"
-	default: return "??"
+	default: fatalError()
 	}
 }
 
@@ -42,14 +42,20 @@ struct Scale {
 	
 	func midiNoteInScale(index: Int) -> Int {
 		var effectiveIndex = index
-		while effectiveIndex <= 0 { effectiveIndex += 7 }
-		while effectiveIndex >= 8 { effectiveIndex -= 7 }
+		let intervals = major ? major_intervals : minor_intervals
+		while effectiveIndex <= 0 {
+			effectiveIndex += intervals.count
+		}
+		while effectiveIndex > intervals.count {
+			effectiveIndex -= intervals.count
+		}
 		effectiveIndex -= 1
-		return midiBase + (major ? major_intervals[effectiveIndex] : minor_intervals[effectiveIndex])
+		return midiBase + intervals[effectiveIndex]
 	}
 	
 	func nameInScale(index: Int) -> String {
-		return noteName(midiCode: midiNoteInScale(index: index), preferSharp: withSharp).uppercased()
+		let midiNote = midiNoteInScale(index: index)
+		return noteName(midiCode: midiNote, preferSharp: withSharp).uppercased()
 	}
 	
 	var name: String {
@@ -62,7 +68,6 @@ struct Scale {
 }
 
 let trainingScales = [
-	// C, a, G, e, F, d,
 	Scale(midiBase: baseMidiC, withSharp: true, major: true),
 	Scale(midiBase: baseMidiC - 3, withSharp: true, major: false),
 	Scale(midiBase: baseMidiC + 7, withSharp: true, major: true),
@@ -75,4 +80,6 @@ struct Interval : Identifiable {
 	var id: Int
 }
 
-let trainingIntervals = [ Interval(id: 1), Interval(id: 3), Interval(id: 5), Interval(id: 7) ]
+let trainingIntervals = [
+	Interval(id: 1), Interval(id: 3), Interval(id: 5), Interval(id: 7)
+]

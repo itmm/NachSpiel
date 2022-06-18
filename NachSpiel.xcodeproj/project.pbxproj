@@ -19,6 +19,8 @@
 		24FD6A89285C8F0800F1F680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FD6A5E285C8F0800F1F680 /* Assets.xcassets */; };
 		24FD6A99285C945100F1F680 /* Tones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A98285C945100F1F680 /* Tones.swift */; };
 		24FD6A9A285C945100F1F680 /* Tones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A98285C945100F1F680 /* Tones.swift */; };
+		24FD6A9C285DEB2C00F1F680 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A9B285DEB2C00F1F680 /* Player.swift */; };
+		24FD6A9D285DEB2C00F1F680 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FD6A9B285DEB2C00F1F680 /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		24FD6A80285C8F0800F1F680 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		24FD6A82285C8F0800F1F680 /* Tests_macOSLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOSLaunchTests.swift; sourceTree = "<group>"; };
 		24FD6A98285C945100F1F680 /* Tones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tones.swift; sourceTree = "<group>"; };
+		24FD6A9B285DEB2C00F1F680 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 				24FD6A5D285C8F0600F1F680 /* ContentView.swift */,
 				24FD6A98285C945100F1F680 /* Tones.swift */,
 				24FD6A5E285C8F0800F1F680 /* Assets.xcassets */,
+				24FD6A9B285DEB2C00F1F680 /* Player.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -303,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FD6A9C285DEB2C00F1F680 /* Player.swift in Sources */,
 				24FD6A99285C945100F1F680 /* Tones.swift in Sources */,
 				24FD6A86285C8F0800F1F680 /* ContentView.swift in Sources */,
 				24FD6A84285C8F0800F1F680 /* NachSpielApp.swift in Sources */,
@@ -313,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24FD6A9D285DEB2C00F1F680 /* Player.swift in Sources */,
 				24FD6A9A285C945100F1F680 /* Tones.swift in Sources */,
 				24FD6A87285C8F0800F1F680 /* ContentView.swift in Sources */,
 				24FD6A85285C8F0800F1F680 /* NachSpielApp.swift in Sources */,
